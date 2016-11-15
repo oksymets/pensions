@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Пенсійні розрахунки</title>
+
+    <!--jQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="css/jquery-ui.css">-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+    <div id="population" class="col-md-4">
+        <h2>Населення</h2>
+
+        <p class="category">Пенсійний вік <i>(50—70 років)</i></p>
+
+        <div id="age">
+            <div class="pull-left"><span class="min">50</span></div>
+            <div class="pull-right"><span class="max">70</span></div>
+            <div id="age-handle" class="ui-slider-handle"></div>
+        </div>
+
+        <p class="category">Рівень зайнятості <i>(50—90%)</i></p>
+
+        <div id="employment">
+            <div class="pull-left"><span class="min">0.5</span></div>
+            <div class="pull-right"><span class="max">0.9</span></div>
+            <div id="employment-handle" class="ui-slider-handle"></div>
+        </div>
+
+        <p class="category">Частка платників внесків <i>(50—90%)</i></p>
+
+        <div id="payers">
+            <div class="pull-left"><span class="min">0.5</span></div>
+            <div class="pull-right"><span class="max">0.9</span></div>
+            <div id="payers-handle" class="ui-slider-handle"></div>
+        </div>
+    </div>
+
+
+    <div id="finance" class="col-md-4">
+        <h2>Фінанси</h2>
+
+        <p class="category">Ставка ЄСВ до Пенсійного фонду <i>(0,1—0,5)</i></p>
+        <div id="esv">
+            <div class="pull-left"><span class="min">0.1</span></div>
+            <div class="pull-right"><span class="max">0.5</span></div>
+            <div id="esv-handle" class="ui-slider-handle"></div>
+        </div>
+
+        <p class="category">Середня пенсія <i>(1000—10000 грн)</i></p>
+        <div id="pension">
+            <div class="pull-left"><span class="min">1000</span></div>
+            <div class="pull-right"><span class="max">10000</span></div>
+            <div id="pension-handle" class="ui-slider-handle"></div>
+        </div>
+
+        <p class="category">Середня зарплата <i>(4000—15000 грн)</i></p>
+        <div id="salary">
+            <div class="pull-left"><span class="min">4000</span></div>
+            <div class="pull-right"><span class="max">15000</span></div>
+            <div id="salary-handle" class="ui-slider-handle"></div>
+        </div>
+    </div>
+
+
+    <div id="calculations" class="col-md-4">
+        <br>
+        <h4 id="result1">Працездатні: x осіб</h4>
+        <h4 id="result2">Зайняті: x осіб</h4>
+        <h4 id="result3">Платять: x осіб</h4>
+        <h4 id="result4">Пенсіонерів: x осіб</h4>
+        <br>
+
+        <h4 id="result5">Працездатні до пенсіонерів: x</h4>
+        <h4 id="result6">Платники до пенсіонерів: x</h4>
+        <br>
+        <h4 id="result7"><b>Надходження:</b> x грн</h4>
+        <h4 id="result8"><b>Видатки:</b> x грн</h4>
+        <br>
+
+        <h3 id="result9">Баланс Пенс. фонду: x грн</h3>
+
+    </div>
+
+</div>
+
+</div>
+
+<!--jQuery + jQuery UI-->
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui-1.12.1.js"></script>
+
+<!-- Bootstrap JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
